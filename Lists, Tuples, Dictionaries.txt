@@ -1,0 +1,39 @@
+list1 = ["Ram", "Sita", "Shayam", "Amit", "Ramesh", "Suresh"]
+list2 = ["Delhi", "U.P", "M.P", "Assam", "Goa"]
+list3 = [20, 40, 25, 60, 10]
+
+x = list3                       # Assigning value of list3 to x
+
+print("Names : ", list1)        # Display values of list1
+print("Cities", list2[2:4])     # Display values of list2 between the index 2(included) to 4(excluded)
+print("Age : ", x)              # Display value of x
+print("\n\n")
+#----------------------------------------------------------------
+
+tuple1 = ("Tiger", "Lion", "Zebra", "Leopard", "Rhino", "Elephant")
+tuple2 = (1, 2, 3, 4, 5)
+
+# Accessing elements from tuple1 and tuple 2
+
+print("Tuple 1 : ", tuple1)         # Display values of tuple1
+print("Tuple 2 : ", tuple2[1:3])    # Display values from index 1 to 3
+print("\n\n")
+
+#----------------------------------------------------------------
+
+dictionary1 = {"Fruit" : "Apple", "Colour" : "Red", "Quantity" : 12}
+dictionary2 = {"Brand": "Ford", "Model": "Raptor 150", "year": 1964}
+
+# There are four ways to delete an element from dictionary
+
+del dictionary1["Fruit"]       # del keyword removes he value with specified key name
+print(dictionary1)
+
+dictionary2.pop("Model")       # pop() removes the value with specified key name
+print(dictionary2)
+
+dictionary1.popitem()          # popitem() removes the last value inserted
+print(dictionary1)
+
+dictionary2.clear()            # clear() removes all values in a dictionary
+print(dictionary2)
